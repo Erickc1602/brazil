@@ -3,80 +3,132 @@
     <head>
         <title>Brazil World Cup </title>
         <link rel="stylesheet" href="styles.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
      </head>
     
      <h1>Brazil World Cups Tittles</h1>
-    
-    <body>
-    
-    <Div class="grid-container"> 
-       
-        <div class="grid-child one">  
-     
-            <h2>Brazil 1958</h2>
-
-    <img src="https://brunohoffmann.files.wordpress.com/2015/08/pele.jpg" alt="Pele" width="350" height="200"> 
-  
-    <p style="font-size: 30px ;"><a href="https://brazil.herokuapp.com/1958.html"> 1958 Highlights ! </a> </p>
-
-    </Div>
+     <style>
+        * {
+          box-sizing: border-box;
+        }
         
-    <div class="grid-child two">
-
-            <h2>Brazil 1962</h2>
-
-            <img src="https://64.media.tumblr.com/tumblr_lodj2v3ziT1qfxktpo1_1280.pnj" alt="Mauro cesar" width="350" height="200">
-
-            <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1962.html">1962 Highlights !</a></p>
-
-        </div>
-  
-    
-    <div class="column">
-
-        <h2>Brazil 1970</h2>
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
       
-        <img src="https://www.fifaultimateteam.it/en/wp-content/uploads/2019/07/Carlos-.jpg" alt="Carlos Alberto" width="350" height="200">
+        .column {
+          flex: 25%;
+          max-width: 33%;
+          padding: 0 4px;
+          margin: 10px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          margin: 8px;
+          vertical-align: middle;
+        }
+        
 
-        <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1970.html"> 1970 Highlights!</a></p>
-    </div>
-    
+        @media (max-width: 800px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+    <body>
     <div>
 
-        <h2>Brazil 1994</h2>
-
-        <img src="https://www.thesun.co.uk/wp-content/uploads/2020/04/NINTCHDBPICT000397988922.jpg" alt=" Romario" width="350" height="200">
-
-        <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1994.html"> 1994 Highlights! </a></p>
-
-    </div>
-
-    <div>
-
-        <h2>Brazil 2002</h2>
-
-        <img src="https://i.guim.co.uk/img/media/74fe162839e316597767d91bfb136dfa01ab62fc/0_23_2048_1228/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=af21139c0f7d4dce78da379391e07e51" alt="Ronaldo" width="350" height="200">
-
-<p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/2002.html"> 2002 Highlights!</a></p>
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-</Div>  
-    
-   
-
-   
+        <div class="row"> 
+            <div class="column">
+                
+                <h2>Brazil 1958</h2>
+                
+                <img src="https://brunohoffmann.files.wordpress.com/2015/08/pele.jpg" alt="Pele" width="350" height="200"> 
+                
+                <p style="font-size: 30px ;"><a href="https://brazil.herokuapp.com/1958.html"> 1958 Highlights ! </a> </p>
+                
+            </Div>
+            
+            <div class="column" >
+                
+                <h2 >Brazil 1962</h2>
+                
+                <img src="https://64.media.tumblr.com/tumblr_lodj2v3ziT1qfxktpo1_1280.pnj" alt="Mauro cesar" width="350" height="200">
+                
+                <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1962.html">1962 Highlights !</a></p>
+                
+            </div>
+            
+            
+            <div class="column">
+                
+                <h2 >Brazil 1970</h2>
+                
+                <img src="https://www.fifaultimateteam.it/en/wp-content/uploads/2019/07/Carlos-.jpg" alt="Carlos Alberto" width="350" height="200">
+                
+                <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1970.html"> 1970 Highlights!</a></p>
+            </div>
+            
+            <div class="column" >
+                
+                <h2 >Brazil 1994</h2>
+                
+                <img src="https://www.thesun.co.uk/wp-content/uploads/2020/04/NINTCHDBPICT000397988922.jpg" alt=" Romario" width="350" height="200">
+                
+                <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/1994.html"> 1994 Highlights! </a></p>
+                
+            </div>
+            
+            <div class="column">
+                
+                <h2 >Brazil 2002</h2>
+                
+                <img src="https://i.guim.co.uk/img/media/74fe162839e316597767d91bfb136dfa01ab62fc/0_23_2048_1228/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=af21139c0f7d4dce78da379391e07e51" alt="Ronaldo" width="350" height="200">
+                
+                <p style="font-size: 30px;"><a href="https://brazil.herokuapp.com/2002.html"> 2002 Highlights!</a></p>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+            
+            
+            
+            
+        </Div>  
+        
+        
+        
+        
         
 
 
